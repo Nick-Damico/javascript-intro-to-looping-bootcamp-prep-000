@@ -1,11 +1,7 @@
 function forLoop( array ) {
   for ( let i = 0; i < 25; i++ ) {
-    if ( i === 1 ){
-      array.push("I am 1 strange loop.");
-    } else {
-      const string = `I am #{i} strange loops.`;
-        array.push(string);
-    }
+    let string = i === 0 ? "I am 1 strange loop." : `I am #{i} strange loops.`
+    array.push(string);
   }
   return array;
 }
